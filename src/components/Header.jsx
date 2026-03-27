@@ -38,7 +38,7 @@ const Header = () => {
 
       <section className="relative overflow-hidden bg-gradient-to-br from-[#f4faf2] to-[#ecf5e9]">
         {/* Environmental Background Image with soft opacity */}
-        <div className="absolute inset-0 opacity-[0.25] pointer-events-none mix-blend-multiply">
+        <div className="absolute inset-0 opacity-[0.55] pointer-events-none mix-blend-multiply">
           <img src={envHeaderBg} alt="" className="w-full h-full object-cover" />
         </div>
 
@@ -65,7 +65,7 @@ const Header = () => {
               </div>
 
               <div className="text-right flex flex-col items-end relative z-10">
-                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#5aa142] mb-1">Expert Local Service</span>
+                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[black] mb-1">Expert Local Service</span>
                 <a href="tel:7204455599" className="text-4xl font-black text-[#1d4f79] tracking-tighter hover:text-[#5aa142] transition-all duration-300">
                   720-445-5599
                 </a>
@@ -91,7 +91,7 @@ const Header = () => {
         </div>
 
         {/* High-Impact Main Nav - Enhanced for "Nổi nổi lên" */}
-        <nav className="hidden lg:block relative z-20 border-t border-[#d8d0bb]/30 bg-white/95 backdrop-blur-md shadow-[0_25px_50px_-12px_rgba(0,0,0,0.08)]">
+        <nav className="hidden lg:block relative z-20 border-t border-[#d8d0bb]/20 bg-[#5d7d6a] shadow-[0_15px_40px_-10px_rgba(0,0,0,0.1)]">
           <div className="mx-auto max-w-7xl px-8">
             <ul className="flex items-center justify-between">
               {primaryLinks.map((item) => {
@@ -104,15 +104,15 @@ const Header = () => {
                       to={targetPath}
                       className={({ isActive }) =>
                         `block py-5 px-6 text-[14px] font-black uppercase tracking-[0.2em] transition-all duration-300 relative rounded-sm border-2 border-transparent 
-                         ${isActive 
-                           ? "text-[#5aa142] bg-[#5aa142]/5 border-[#5aa142]/30" 
-                           : "text-[#1d4f79] hover:text-[#5aa142] hover:border-[#5aa142] hover:bg-[#5aa142]/5"
-                         }`
+                         ${isActive
+                          ? "!text-white bg-white/20 border-white/40"
+                          : "!text-white/90 hover:!text-white hover:border-white/20 hover:bg-white/10"
+                        }`
                       }
                     >
                       {item}
                       {/* Subdued High-Impact Indicator */}
-                      <span className={`absolute bottom-2 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#5aa142] transition-all duration-300 ${isActive ? 'scale-100 opacity-100' : 'scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100'}`} />
+                      <span className={`absolute bottom-2 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#a4c639] transition-all duration-300 ${isActive ? 'scale-100 opacity-100' : 'scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100'}`} />
                     </NavLink>
                   </li>
                 );
@@ -142,8 +142,8 @@ const Header = () => {
                     onClick={() => setIsMenuOpen(false)}
                     className={({ isActive }) =>
                       `block p-5 text-sm font-black uppercase tracking-widest transition-all ${isActive
-                        ? "bg-[#5aa142] text-white shadow-2xl translate-x-3"
-                        : "text-[#1d4f79] hover:bg-white/60 border-l-[4px] border-transparent hover:border-[#5aa142] pl-6"
+                        ? "bg-[#5d7d6a] !text-white shadow-2xl translate-x-3"
+                        : "text-[#3e4a3e] hover:bg-white/60 border-l-[4px] border-transparent hover:border-[#5d7d6a] pl-6"
                       }`
                     }
                   >

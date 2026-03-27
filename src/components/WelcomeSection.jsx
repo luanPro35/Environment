@@ -33,7 +33,4 @@ const WelcomeSection = () => {
     </div>
   );
 };
-
-
-
 export default WelcomeSection;

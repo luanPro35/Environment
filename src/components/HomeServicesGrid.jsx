@@ -1,7 +1,7 @@
 import React from 'react';
 import sodImage from '../assets/quang/IMG_6197.jpg';
 import mulchImage from '../assets/quang/IMG_9474.jpg';
-import cleanupImage from '../assets/quang/IMG_7867.jpg';
+import cleanupImage from '../assets/quang/fbeb6cf4-407c-4f90-b556-7b69d7b54a64.jpg';
 import maintenanceImage from '../assets/quang/IMG_7551.jpg';
 import bgImage from '../assets/quang/IMG_0196.jpg';
 
@@ -53,10 +53,10 @@ const HomeServicesGrid = () => {
     <section className="relative py-24 bg-white overflow-hidden">
       {/* Blurred Background Image */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        <img 
-          src={bgImage} 
-          alt="" 
-          className="w-full h-full object-cover blur-[2px] opacity-40 scale-105" 
+        <img
+          src={bgImage}
+          alt=""
+          className="w-full h-full object-cover blur-[2px] opacity-40 scale-105"
         />
         <div className="absolute inset-0 bg-white/30" />
       </div>
