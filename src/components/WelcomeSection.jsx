@@ -1,13 +1,12 @@
-import leafWelcome from "../assets/leaf_welcome.png";
 import q1 from "../assets/quang/IMG_6021.jpg";
 import q3 from "../assets/quang/IMG_6023.jpg";
 import q4 from "../assets/quang/IMG_6024.jpg";
 import q7 from "../assets/quang/IMG_7552.jpg";
 import q8 from "../assets/quang/IMG_7553.jpg";
 import q9 from "../assets/quang/IMG_7675.jpg";
-import q10 from "../assets/quang/IMG_0489.jpg";
-import q11 from "../assets/quang/IMG_0283.jpg";
-import q12 from "../assets/quang/IMG_0282.jpg";
+import q10 from "../assets/quang/IMG_0489.JPG";
+import q11 from "../assets/quang/IMG_0283.JPG";
+import q12 from "../assets/quang/IMG_0282.JPG";
 import ImageCarousel from "./ImageCarousel";
 
 const projects = [q1, q3, q4, q7, q8, q9, q10, q11, q12];
