@@ -91,6 +91,16 @@ const AboutPage = () => {
           </div>
         </div>
 
+        {/* Note from Ryan */}
+        <div className="mt-16 mb-24 max-w-3xl mx-auto text-center space-y-8 p-12 bg-[#f1efe1] rounded-sm border-[6px] border-white shadow-xl italic transition-transform hover:scale-[1.01] duration-500">
+          <p className="text-2xl font-medium text-[#1d4f79] leading-relaxed">
+            "Thank you for considering our company — we look forward to partnering with you to create and maintain a landscape you'll absolutely love."
+          </p>
+          <p className="text-lg font-black uppercase tracking-widest text-[#5aa142]">
+            — Ryan, Owner
+          </p>
+        </div>
+
         {/* Info Details (Grid Style) */}
         <div className="grid md:grid-cols-2 gap-x-20 gap-y-16 py-16 border-t border-gray-100">
           <InfoSection
@@ -101,16 +111,6 @@ const AboutPage = () => {
             title="Our Commitment"
             content="Our ultimate goal is simple: to deliver dependable service, honest transparent pricing, and breathtaking results that make our customers incredibly proud of their outdoor spaces. We believe in building lifelong relationships through trust, clear communication, and dedicated hard work."
           />
-        </div>
-
-        {/* Note from Ryan */}
-        <div className="mt-16 max-w-3xl mx-auto text-center space-y-8 p-12 bg-[#f1efe1] rounded-sm border-[6px] border-white shadow-xl italic transition-transform hover:scale-[1.01] duration-500">
-          <p className="text-2xl font-medium text-[#1d4f79] leading-relaxed">
-            "Thank you for considering our company — we look forward to partnering with you to create and maintain a landscape you'll absolutely love."
-          </p>
-          <p className="text-lg font-black uppercase tracking-widest text-[#5aa142]">
-            — Ryan, Owner
-          </p>
         </div>
       </section>
 
