@@ -1,8 +1,9 @@
 import React from 'react';
-import backyardImage from '../assets/quang/IMG_0194.jpg';
+import backyardImage from '../assets/quang/IMG_6021.jpg';
 import hardscapingImage from '../assets/quang/IMG_3463.jpg';
-import lightingImage from '../assets/quang/IMG_0196.jpg';
-import plantingImage from '../assets/quang/IMG_7676.jpg';
+import lightingImage from '../assets/quang/IMG_6195.jpg';
+import plantingImage from '../assets/quang/77368705736__38B70B24-49C3-4199-9A75-2653FA407953.jpg'
+import bgImage from '../assets/quang/IMG_6006.jpg';
 
 const ServiceCard = ({ title, description, image, buttonText }) => (
   <div className="flex flex-col overflow-hidden rounded-2xl bg-[#fdfaf1] shadow-lg border border-[#d8d0bb]/20 group">
@@ -23,7 +24,7 @@ const ServiceCard = ({ title, description, image, buttonText }) => (
 const CompleteLandscapeGrid = () => {
   const services = [
     {
-      title: "Backyard Transformation",
+      title: "Frontyard Transformation",
       description: "Dreaming of the perfect outdoor sanctuary? We specialize in complete backyard renovations, from custom designs to full implementation, creating a space that perfectly suits your lifestyle.",
       image: backyardImage,
       buttonText: "More About Transformations"
@@ -49,17 +50,21 @@ const CompleteLandscapeGrid = () => {
   ];
 
   return (
-    <section className="py-24 bg-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="relative py-24 bg-white overflow-hidden">
+      {/* Blurred Background Image */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <img 
+          src={bgImage} 
+          alt="" 
+          className="w-full h-full object-cover blur-[2px] opacity-35 scale-105" 
+        />
+        <div className="absolute inset-0 bg-white/30" />
+      </div>
+
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20 space-y-4">
           <p className="text-sm font-black text-[#5aa142] uppercase tracking-[0.3em]">Total Outdoor Solutions</p>
           <h2 className="text-4xl sm:text-5xl font-black text-[#1d4f79] uppercase tracking-tight">Complete Landscape Design & Installation</h2>
-          <div className="flex justify-center pt-4">
-            <div className="bg-[#1d4f79] text-white px-4 py-2 flex items-center gap-2 rounded-sm text-[10px] font-black tracking-widest uppercase italic shadow-lg">
-              <span className="text-[#5aa142] text-lg">VIP</span>
-              PREMIUM QUALITY SERVICE
-            </div>
-          </div>
         </div>
 
         <div className="grid gap-12 md:grid-cols-2">

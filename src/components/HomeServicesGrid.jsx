@@ -1,8 +1,9 @@
 import React from 'react';
-import sodImage from '../assets/quang/77368636993__EC02BA5F-3EAD-40F6-9A52-635B66BAF58A.jpg';
+import sodImage from '../assets/quang/IMG_6197.jpg';
 import mulchImage from '../assets/quang/IMG_9474.jpg';
-import cleanupImage from '../assets/quang/IMG_6195.jpg';
-import maintenanceImage from '../assets/quang/IMG_9476.jpg';
+import cleanupImage from '../assets/quang/IMG_7867.jpg';
+import maintenanceImage from '../assets/quang/IMG_7551.jpg';
+import bgImage from '../assets/quang/IMG_0196.jpg';
 
 const ServiceCard = ({ title, description, image, buttonText }) => (
   <div className="flex flex-col overflow-hidden rounded-2xl bg-[#fdfaf1] shadow-lg border border-[#d8d0bb]/20 group">
@@ -49,8 +50,18 @@ const HomeServicesGrid = () => {
   ];
 
   return (
-    <section className="py-24 bg-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="relative py-24 bg-white overflow-hidden">
+      {/* Blurred Background Image */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <img 
+          src={bgImage} 
+          alt="" 
+          className="w-full h-full object-cover blur-[2px] opacity-40 scale-105" 
+        />
+        <div className="absolute inset-0 bg-white/30" />
+      </div>
+
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 mt-8">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />

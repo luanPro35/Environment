@@ -12,12 +12,12 @@ if (!fs.existsSync(outputDir)) {
 fs.readdirSync(directory).forEach(file => {
   const filePath = path.join(directory, file);
   const ext = path.extname(file).toLowerCase();
-  
+
   if (['.jpg', '.jpeg', '.png'].includes(ext)) {
     const outputPath = path.join(outputDir, file);
-    
+
     console.log(`Optimizing ${file}...`);
-    
+
     sharp(filePath)
       .resize(1000) // Resize to 1000px wide
       .jpeg({ quality: 80 }) // 80% quality

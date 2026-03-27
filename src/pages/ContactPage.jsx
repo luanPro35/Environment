@@ -1,5 +1,6 @@
 import React from 'react';
 import CTA from '../components/CTA';
+import ServiceAreaMap from '../components/ServiceAreaMap';
 
 const ContactPage = () => {
   return (
@@ -53,19 +54,12 @@ const ContactPage = () => {
 
           <div className="pt-16 border-t border-[#d8d0bb]/50">
             <h3 className="text-sm font-black uppercase tracking-widest text-[#5aa142] mb-8 text-center">Service Area Map</h3>
-            <div className="h-[400px] w-full overflow-hidden rounded-sm shadow-2xl border-[4px] border-white group relative">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.8789!2d-105.0210!3d39.6133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b7f...!2s3564%20W%20Alamo%20Dr%2C%20Littleton%2C%20CO%2080123!5e0!3m2!1sen!2sus!4v1" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0, filter: 'grayscale(0.1) contrast(1.1)' }} 
-                allowFullScreen="" 
-                loading="lazy"
-                title="Littleton Service Area"
-              />
+            <div className="h-[400px] w-full overflow-hidden rounded-sm group relative">
+              <ServiceAreaMap />
             </div>
           </div>
         </div>
+
 
         <div className="mt-20 pt-10 border-t border-[#d8d0bb]/40 text-center">
 

@@ -99,18 +99,20 @@ const Header = () => {
                 const isActive = location.pathname === targetPath || (targetPath !== '/' && location.pathname.startsWith(targetPath));
 
                 return (
-                  <li key={item} className="group">
+                  <li key={item} className="group py-2">
                     <NavLink
                       to={targetPath}
-                      className={() =>
-                        `block py-7 text-[15px] font-black uppercase tracking-[0.2em] transition-all duration-500 relative ${isActive ? "text-[#5aa142]" : "text-[#1d4f79] hover:text-[#5aa142]"
-                        }`
+                      className={({ isActive }) =>
+                        `block py-5 px-6 text-[14px] font-black uppercase tracking-[0.2em] transition-all duration-300 relative rounded-sm border-2 border-transparent 
+                         ${isActive 
+                           ? "text-[#5aa142] bg-[#5aa142]/5 border-[#5aa142]/30" 
+                           : "text-[#1d4f79] hover:text-[#5aa142] hover:border-[#5aa142] hover:bg-[#5aa142]/5"
+                         }`
                       }
                     >
                       {item}
-                      {/* High-Impact Underline */}
-                      <span className={`absolute bottom-0 left-0 right-0 h-1.5 bg-[#5aa142] shadow-[0_-4px_10px_rgba(90,161,66,0.3)] transition-all duration-500 transform origin-left ${isActive ? 'scale-x-100 opacity-100' : 'scale-x-0 group-hover:scale-x-100 opacity-0 group-hover:opacity-100'
-                        }`} />
+                      {/* Subdued High-Impact Indicator */}
+                      <span className={`absolute bottom-2 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#5aa142] transition-all duration-300 ${isActive ? 'scale-100 opacity-100' : 'scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100'}`} />
                     </NavLink>
                   </li>
                 );
