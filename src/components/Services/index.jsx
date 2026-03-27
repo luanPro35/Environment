@@ -93,7 +93,7 @@ const Services = () => {
 
           <div className="mb-20 flex justify-center">
             <div className="max-w-3xl overflow-hidden rounded-sm border-[6px] border-white shadow-xl">
-              <img src={project2} alt="Professional Landscaping Work" className="h-auto w-full" />
+              <img src={project2} alt="Professional Landscaping Work" className="h-auto w-full" loading="lazy" />
             </div>
           </div>
 

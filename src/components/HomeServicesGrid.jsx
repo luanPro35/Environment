@@ -7,7 +7,7 @@ import maintenanceImage from '../assets/quang/IMG_9476.jpg';
 const ServiceCard = ({ title, description, image, buttonText }) => (
   <div className="flex flex-col overflow-hidden rounded-2xl bg-[#fdfaf1] shadow-lg border border-[#d8d0bb]/20 group">
     <div className="h-64 overflow-hidden">
-      <img src={image} alt={title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      <img src={image} alt={title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" decoding="async" />
     </div>
     <div className="flex flex-col items-center p-8 text-center flex-1">
       <div className="mb-6 -mt-16 relative z-10 w-full bg-[#fdfaf1] rounded-xl p-6 shadow-md border border-[#d8d0bb]/10">

@@ -18,14 +18,14 @@ const WelcomeSection = () => {
       <section className="flex flex-col items-center text-center space-y-12">
         {/* Main Heading */}
         <h1 className="max-w-4xl text-4xl sm:text-6xl font-black text-[#1d4f79] leading-[1.1] tracking-tight">
-          Southwestern Denver Landscaping: Local Sod & Landscape Experts
+          Hoang's Landscape & Maintenance: Local Landscaping and Sod Experts in Littleton
         </h1>
 
         {/* Description & Locations */}
         <p className="max-w-5xl text-xl sm:text-3xl font-bold text-[#1d4f79] leading-snug tracking-wide">
           Professional Lawn Care, Sod & Landscape Design Services in Littleton, Lakewood, Wheat Ridge, Denver, Englewood, Highlands Ranch, Castle Rock
         </p>
-        
+
         {/* Image Slider "Xong rồi tới hình ảnh vài tấm slide" */}
         <div className="w-full pt-10">
           <ImageCarousel images={projects} />

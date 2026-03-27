@@ -25,6 +25,7 @@ const AboutPage = () => {
           src={aboutHero}
           alt="About Us Hero"
           className="absolute inset-0 w-full h-full object-cover object-[center_35%] shadow-inner"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-black/15" />
         <div className="relative z-10 text-center">

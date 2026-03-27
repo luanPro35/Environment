@@ -23,6 +23,8 @@ const ImageCarousel = ({ images }) => {
               src={image} 
               alt={`Project ${index + 1}`} 
               className="h-[450px] w-full object-cover sm:h-[550px]" 
+              loading="lazy"
+              decoding="async"
             />
           </div>
         ))}
