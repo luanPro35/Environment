@@ -91,7 +91,7 @@ const Header = () => {
         </div>
 
         {/* High-Impact Main Nav - Enhanced for "Nổi nổi lên" */}
-        <nav className="hidden lg:block relative z-20 border-t border-[#d8d0bb]/20 bg-[#5d7d6a] shadow-[0_15px_40px_-10px_rgba(0,0,0,0.1)]">
+        <nav className="hidden lg:block relative z-20 border-t border-[#d8d0bb]/20 bg-[#5d9a46] shadow-[0_10px_30px_-10px_rgba(0,0,0,0.15)]">
           <div className="mx-auto max-w-7xl px-8">
             <ul className="flex items-center justify-between">
               {primaryLinks.map((item) => {
@@ -142,8 +142,8 @@ const Header = () => {
                     onClick={() => setIsMenuOpen(false)}
                     className={({ isActive }) =>
                       `block p-5 text-sm font-black uppercase tracking-widest transition-all ${isActive
-                        ? "bg-[#5d7d6a] !text-white shadow-2xl translate-x-3"
-                        : "text-[#3e4a3e] hover:bg-white/60 border-l-[4px] border-transparent hover:border-[#5d7d6a] pl-6"
+                        ? "bg-[#5d9a46] !text-white shadow-2xl translate-x-3"
+                        : "text-[#3e4a3e] hover:bg-white/60 border-l-[4px] border-transparent hover:border-[#5d9a46] pl-6"
                       }`
                     }
                   >
